@@ -6,10 +6,15 @@ let fases = [
         {
             numero: 19111,
             name: 'Zé Carlos',
-            partido: 'Butecão',
-        
-
+            partido: 'Nacionalista',
+            fotos:[
+                {url}
+            ]    
         },
+        {
+            numero: 20001,
+            name: ''
+        }
     
 
 ]

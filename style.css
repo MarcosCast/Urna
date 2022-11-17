@@ -1,8 +1,15 @@
+@keyframes pisca {
+    0% { opacity: 0.2;}
+    50% { opacity: 1;}
+    100% { opacity: 0.2;}
+}
+
 body {
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .urna {
@@ -22,7 +29,7 @@ body {
 
 .teclado {
     margin-left: 30px;
-    background-color: #403a3a;
+    background-color: #494C4E;
 }   
 
 .teclado--linha {
@@ -34,7 +41,7 @@ body {
 .teclado--botao {
     width: 70px;
     height: 40px;
-    background-color: #000;
+    background-color: #2E2E2E;
     color: #fff;
     font-size: 25px;
     display: flex;
@@ -48,13 +55,13 @@ body {
 .botao--branco {
     background-color: #fff;
     color: #000;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .botao--corrige {
-    background-color: yellow;
+    background-color: orange;
     color: #000;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .botao--confirma {
@@ -67,10 +74,80 @@ body {
 
 .p1 {
     flex: 1;
+    display: flex;
+}
+
+.p1-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.p1a {
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.p1b {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p1c {
+    height: 45px;
+}
+
+.numero {
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+}
+
+.pisca {
+    animation-name: pisca;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.p1d {
+    flex: 1;
+    line-height: 30px;
+}
+
+.p1-right {
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.p1-image {
+    border: 1px solid #000;
+    background-color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+
+.p1-image img {
+    width: 100%;
+}
+
+.p1-image.small {
+    width: 80%;
+    font-size: 10px;
 }
 
 .p2 {
     height: 50px;
-    font-size: 15px;
+    font-size: 14px;
     border-top: 2px solid #403a3a;
+    padding-left: 10px;
 }

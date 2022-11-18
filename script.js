@@ -15,33 +15,47 @@ function comecarEtapa() {
     let numeroHtml = '';
 
     for(let i=0;i<etapa.numeros;i++) {
-        if(i == 0){
-        numeroHtml += '<div class="numero"></div>';
-    } else {
-        numeroHtml += '<div clas="numero"></div>';
-    }
+        if(i === 0) {
+           numeroHtml += '<div class="numero  pisca"></div>';
+        } else {
+           numeroHtml += '<div clas="numero"></div>';
+        }
 
+    }
     seuVotoPara.style.display = 'none';
     cargo.innerHTML = etapa.titulo;
     descricao.innerHTML = '';
     aviso.style.display = 'none';
     lateral.innerHTML = '';
     numeros.innerHTML = numeroHtml;
-}
+    
 }
 
 function atualizarInterfazer() {
+    console.log("Atualizando a Interface...");
+    console.log(numero);
 
 }
 
 function clicou(n) {
-    let numero = document.querySelector('.numero.pisca');
+    let elNumero = document.querySelector('.numero.pisca');
     if (elNumero !== null) {
         elNumero.innerHTML = n;
         numero = `${numero}${n}`;
+
+        elNumero.classList.remove('pisca');
+        if(elNumero.nextElementSibling !== null) {
+        elNumero.nextElementSibling.classList.add('pisca');
+        } else {
+            atualizarInterfazer();
+        }
     }
-    alert("Você apertou o número: "+n);
+    
 }
+
+/*function clicou(n) {
+    alert("Voce apertou o número: " +n);
+}*/
 
 function branco() {
     alert("Você apertou a tecla BRANCO!");

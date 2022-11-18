@@ -20,7 +20,7 @@ function comecarEtapa() {
         if(i === 0) {
            numeroHtml += '<div class="numero pisca"></div>';
         } else {
-           numeroHtml += '<div clas="numero"></div>';
+           numeroHtml += '<div class="numero"></div>';
         }
 
     }
@@ -31,8 +31,8 @@ function comecarEtapa() {
     lateral.innerHTML = '';
     numeros.innerHTML = numeroHtml;    
 }
-function atualizarInterfazer() {
-    console.log("Atualizando a Interface...");
+function atualizarInterface() {
+    let etapa = etapas[etapaAtual];
     let candidato = etapa.candidatos.filter((item)=>{
         if(item.numero === numero) {
             return true;
@@ -47,10 +47,10 @@ function atualizarInterfazer() {
         descricao.innerHTML = `Nome:  ${candidato.nome}<br/>Partido: ${candidato.partido}`;
         let fotosHtml = '';
         for(let i in candidato.fotos) {
-            if(candidato.fotos[i].samll){
-                fotosHtml = `<div class="p1-image small"><img src="images/${candidato.foto[i].url}" alt="" />${candidato.fotos[i].legenda}</div>`;
+            if(candidato.fotos[i].small){
+                fotosHtml += `<div class="p1-image small"><img src="images/${candidato.fotos[i].url}" alt="" />${candidato.fotos[i].legenda}</div>`;
             } else {
-                fotosHtml = `<div class="p1-image"><img src="images/${candidato.foto[i].url}" alt="" />${candidato.fotos[i].legenda}</div>`;
+                fotosHtml += `<div class="p1-image"><img src="images/${candidato.fotos[i].url}" alt="" />${candidato.fotos[i].legenda}</div>`;
             }
         }
         lateral.innerHTML = fotosHtml;
@@ -71,7 +71,7 @@ function clicou(n) {
         if(elNumero.nextElementSibling !== null) {
         elNumero.nextElementSibling.classList.add('pisca');
         } else {
-            atualizarInterfazer();
+            atualizarInterface();
         }
     }    
 }
@@ -108,7 +108,7 @@ function confirma() {
     }
 
     if(votoConfirmado) {
-        etapa++;
+        etapaAtual++;
         if(etapas[etapaAtual] !== undefined) {
             comecarEtapa();
         }else {

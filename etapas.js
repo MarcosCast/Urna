@@ -1,6 +1,6 @@
-let fases = [
+let etapas = [
     {
-     titulo: 'DEPUTADO DISTRITAL',
+     titulo: 'DEPUTADO',
      numeros: 5,
      candidatos: [
         {
@@ -8,7 +8,7 @@ let fases = [
             nome: 'Napoleão Bonaparte',
             partido: 'Nacionalista',
             fotos:[
-                {url:'15669.jpg', legenda: 'Deputato Distrital', small: fake}
+                {url:'15669.jpg', legenda: 'Deputado'}
             ]    
         },
         {
@@ -16,7 +16,7 @@ let fases = [
             nome: 'Maria Antonieta',
             partido: 'Liberdad',
             fotos:[
-                {url:'21155.jpg', legenda: 'Deputato Distrital', small: fake}
+                {url:'21155.jpg', legenda: 'Deputado'}
             ]
         },   
                ]

@@ -1,7 +1,7 @@
 let etapas = [
    /* {
         titulo: 'DEPUTADO FEDERAL',
-        numeros: 5,
+        numeros: 4,
         candidatos: [
            {
                numero: '1234',
@@ -43,6 +43,28 @@ let etapas = [
         },   
                ]
     },
+      /* {
+        titulo: 'DEPUTADO FEDERAL',
+        numeros: 3,
+        candidatos: [
+           {
+               numero: '123',
+               nome: 'Joaquina',
+               partido: 'Nacionalista',
+               fotos:[
+                   {url:'?.jpg', legenda: 'Senador'}
+               ]    
+           },
+           {
+               numero: '565',
+               nome: 'Francileia',
+               partido: 'Liberdad',
+               fotos:[
+                   {url:'?.jpg', legenda: 'Senador'}
+               ]
+           },   
+                  ]
+       },*/
     {
         titulo: 'GOVERNADOR',
         numeros: 2,

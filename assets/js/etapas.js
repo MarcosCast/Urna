@@ -1,5 +1,27 @@
 let etapas = [
-   /* {
+    {
+        titulo: 'DEPUTADO DISTRITAL',
+        numeros: 5,
+        candidatos: [
+           {
+               numero: '15669',
+               nome: 'Napoleão Bonaparte',
+               partido: 'Nacionalista',
+               fotos:[
+                   {url:'15669.jpg', legenda: 'Deputado Distrital'}
+               ]    
+           },
+           {
+               numero: '21155',
+               nome: 'Maria Antonieta',
+               partido: 'Liberdad',
+               fotos:[
+                   {url:'21155.jpg', legenda: 'Deputado Distrital'}
+               ]
+           },   
+                  ]
+       },
+   {
         titulo: 'DEPUTADO FEDERAL',
         numeros: 4,
         candidatos: [
@@ -20,30 +42,9 @@ let etapas = [
                ]
            },   
                   ]
-       },*/
-    {
-     titulo: 'DEPUTADO',
-     numeros: 5,
-     candidatos: [
-        {
-            numero: '15669',
-            nome: 'Napoleão Bonaparte',
-            partido: 'Nacionalista',
-            fotos:[
-                {url:'15669.jpg', legenda: 'Deputado'}
-            ]    
-        },
-        {
-            numero: '21155',
-            nome: 'Maria Antonieta',
-            partido: 'Liberdad',
-            fotos:[
-                {url:'21155.jpg', legenda: 'Deputado'}
-            ]
-        },   
-               ]
-    },
-      /* {
+       },
+
+       {
         titulo: 'SENADOR',
         numeros: 3,
         candidatos: [
@@ -64,7 +65,7 @@ let etapas = [
                ]
            },   
                   ]
-       },*/
+       },
     {
         titulo: 'GOVERNADOR',
         numeros: 2,
@@ -91,8 +92,8 @@ let etapas = [
             },
         ]
         
-    }
-          /* {
+    },
+        {
         titulo: 'PRESIDENTE',
         numeros: 2,
         candidatos: [
@@ -113,6 +114,6 @@ let etapas = [
                ]
            },   
                   ]
-       },*/
+       },
 
 ];
